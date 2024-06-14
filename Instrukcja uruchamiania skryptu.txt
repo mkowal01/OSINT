@@ -1,0 +1,24 @@
+(Do uruchomienia skrypu potrzebny jest system Linux Kali wraz z zaaktualizowanymi paczkami narzędzi systemowych)
+
+1. Wypakuj plik zawierający skrypt "osing_skrypt.sh" do wybranego folderu (zalecamy czysty folder na pulpicie (patrz pkt.6))
+2. Wypakuj plik zawierający klucze API "api_keys.env" do folderu, w którym znajduje się skrypt
+3. Uruchom terminal
+4. Przejdź do folderu w którym znajduje się skrypt oraz klucze API
+5. Uruchom skrypt poleceniem: "./osint_skrypt.sh (domena_wybranej_organizacji)"
+		    przykład: "./osint_skrypt.sh wkdzik.pl"
+6. Skrypt powinien wykonywać się kilka minut, w przypadku gdy zatrzyma się na narzędziu "recon-ng", należy uruchomić kombinację klawiszy "ctr + c"
+7. Wyniki białego wywiadu (OSINT) powinny być widoczne w konsoli oraz w folderach utworzonych przez skrypt.
+
+
+Instrukcja obsługi i uruchomienia skryptów: Amass, Censys, Maltego, Sublist3r
+1.	Wypakuj plik zawierający skrypt "Amass.sh",  "Censys.sh",  "Maltego.sh",  "Sublist3r.sh",  do wybranego folderu.
+2.	Uruchom terminal
+3.	Przejdź do ścieżki w której znajdują się pliki wsadowe
+4.	Nadaj uprawnienia wykonywania dla każdego z tych plików np. „chmod +x Amass.sh”
+5.	Uruchom skrypt poleceniem: „sudo ./Amass.sh (nazwa_organizacji_domeny)”
+				   „sudo ./Censys.sh (nazwa_organizacji_domeny)”
+				   „sudo ./Maltego.sh (nazwa_organizacji_domeny)”
+				   „sudo ./Sublist3r.sh (nazwa_organizacji_domeny)”
+
+6.	Skrypt po uruchomieniu będzie zapisywał dane z OSINTu w plikach tekstowych o nazwie:
+amass_report.txt, censys_report.txt, maltego_report.txt, sublist3r_report.txt
